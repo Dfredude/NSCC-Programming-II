@@ -1,0 +1,4 @@
+*
+!.gitignore
+!*.c
+!assignment[0-10]/
