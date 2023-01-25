@@ -32,12 +32,11 @@ int main(){
     else if (gross_pay <= 1000) withholding_tax_percentage = 15;
     else withholding_tax_percentage = 20;
 
-    withholding_tax = gross_pay * (20.0/100);
+    withholding_tax = gross_pay * (withholding_tax_percentage/100.0);
 
     printf("Your gross pay: %d\n", gross_pay);
     printf("The withholding tax is: %d\n", withholding_tax);
     printf("Your net pay is: %d\n", gross_pay-withholding_tax);
-
 
     return 0;
 }
