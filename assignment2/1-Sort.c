@@ -5,6 +5,8 @@ Display each value in the ordered array.
 
 #include<stdio.h>
 
+#define ARRAY_SIZE 1000
+
 void printIntro();
 int getInputCount(char* arr);
 void bubbleSort(int* arr, int len);
@@ -13,7 +15,7 @@ void getValues(char* arr, int nums[10]);
 
 int main(int argc, char const *argv[])
 {
-    char* input_string;
+    char input_string[ARRAY_SIZE];
     printIntro();
     scanf("%[^\n]", input_string);
     int len = getInputCount(input_string);
