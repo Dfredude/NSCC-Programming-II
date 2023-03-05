@@ -35,7 +35,6 @@ int getAverage(int *nums, int length){
         sum += nums[i];
     }
     return sum/length;
-    
 }
 
 void printStudentInfo(struct Student* student){
